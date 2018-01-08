@@ -72,3 +72,60 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/* Product Grid and Location/Hours*/
+
+.product-grid, .location-hours {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  height: 9rem;
+  padding: 2rem 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+.product-description {
+  background-color: black;
+  padding: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+.info-block {
+  width: 35%;
+}
+
+.title {
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  display: block;
+}
+
+.details {
+  color: black;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  margin-top: 4rem;
+  padding: 5rem 0px;
+  text-align: left;
+}

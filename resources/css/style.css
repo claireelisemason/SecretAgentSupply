@@ -73,6 +73,10 @@ body {
   justify-content: space-between;
 }
 
+.navigation .mobile-nav {
+  display: none;
+}
+
 /* Product Grid and Location/Hours*/
 
 .product-grid, .location-hours {
@@ -128,4 +132,72 @@ footer {
   margin-top: 4rem;
   padding: 5rem 0px;
   text-align: left;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+  .navigation .container {
+    display: none;
+  }
+
+  .navigation .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .site-heading {
+    width: 100%;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .site-heading h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.25rem;
+  }
+
+  .site-heading h4 {
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display:none;
+  }
+
+  .location-hours {
+    flex-wrap: wrap;
+  }
+
+  .info-block {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
